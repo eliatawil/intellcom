@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name=".gitignore" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name=".scrutinizer.yml" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name=".travis.yml" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="changelog.md" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="class.phpmailer.php" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="class.phpmaileroauth.php" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="class.phpmaileroauthgoogle.php" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="class.pop3.php" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="class.smtp.php" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="composer.json" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="composer.lock" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="get_oauth_token.php" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="LICENSE" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="PHPMailerAutoload.php" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="README.md" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="travis.phpunit.xml.dist" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+<file name="VERSION" server="hostfree.orgfree.com" local="130903020000000000" remote="130903020000000000" Dst="1" />
+</dwsync>
