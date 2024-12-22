@@ -1,0 +1,2871 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	border:none;
+	margin:0px;
+	padding:0px;
+}
+
+div#topo{
+	width:100%;
+	height:auto;
+	position:relative;
+}
+
+div#barra_topo{
+	height:30px;
+	width:100%;
+	position:relative; top:0px !important;
+	border-bottom: 1px solid #CCC;
+}
+
+div#conteudo_barra_topo{
+	height:100%;
+	width:1100px;
+	margin:auto;
+	background-color:transparent;
+	position:relative;
+}
+
+span#telefone_barra_topo{
+	display:none;
+}
+
+img#icon_telefone_barra_topo{
+	display:none;
+}
+
+div#icon_email_barra_topo{
+	position:absolute; right:0px; top:0px;
+	background-color:#FFF;
+	border-left: solid 8px #FFFFFF;
+	border-right: solid 6px #FFFFFF;
+}
+
+div#icon_facebook_barra_topo{
+	position:absolute; top:6px; right:70px;
+	border-left: 10px solid #FFF;
+	border-right: 10px solid #FFF;
+}
+
+/* Cabeçalho */
+div#cabecalho{
+	width:1100px;
+	height:130px !important;
+	position:relative;
+	margin:auto;
+}
+
+div#logo{
+	position:absolute; top:20px; left:40px;
+}
+
+/* Mecanismo de pesquisa */
+div#mecanismo_pesquisa{
+	position:absolute; right:40px; top:35px;
+	height:auto;
+	width:auto;
+}
+
+div#mecanismo_pesquisa input#texto_pesquiasr{
+	width:300px;
+	margin-top:5px;
+	font-family: 'PT Sans', sans-serif;
+	font-size:16px;
+	color:#666;
+	padding:5px 5px;
+	outline:none;
+	border: solid 2px #CCCCCC;
+}
+
+div#mecanismo_pesquisa input#btnPesquisar{
+	background-color:#00366C;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px #666;
+	margin-left:5px;
+	color:#FFF;
+	outline:none;
+	font-family:Verdana, Geneva, sans-serif;
+	width:80px;
+	height:32px;
+	cursor:pointer;
+}
+
+/* Menu mobile */
+div#menu_mobile{
+	display:none;
+}
+
+/* Menu */
+div#menu_principal{
+	position:relative; bottom:0px;
+	width:1100px;
+	margin:auto;
+}
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+div#menu_principal div#cssmenu{
+  color:#fff;
+  font-size:16px;
+  text-align:center;
+  background-color: #00366C;
+  margin: 0;
+  width: auto;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+}
+div#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+div#cssmenu ul:after,
+div#cssmenu:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+div#cssmenu ul li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+div#cssmenu ul li a.shadow{
+}
+div#cssmenu ul li a {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  -webkit-transition: color .5s ease;
+  -moz-transition: color .5s ease;
+  -ms-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div#cssmenu ul li ul {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+div#cssmenu ul li ul li {
+  max-height: 0;
+  position: absolute;
+  -webkit-transition: max-height 0.4s ease-out;
+  -moz-transition: max-height 0.4s ease-out;
+  -ms-transition: max-height 0.4s ease-out;
+  -o-transition: max-height 0.4s ease-out;
+  transition: max-height 0.4s ease-out;
+  background: #ffffff;
+}
+div#cssmenu ul li ul li.has-sub:after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #333;
+  z-index: 1;
+  top: 13px;
+  right: 15px;
+}
+div#cssmenu.align-right ul li ul li.has-sub:after {
+  right: auto;
+  left: 15px;
+}
+div#cssmenu ul li ul li.has-sub:before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 3px solid transparent;
+  border-left-color: #ffffff;
+  z-index: 2;
+  top: 15px;
+  right: 15px;
+}
+div#cssmenu.align-right ul li ul li.has-sub:before {
+  right: auto;
+  left: 15px;
+  border-left-color: transparent;
+  border-right-color: #ffffff;
+}
+div#cssmenu ul li ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: none;
+  color: #333;
+  letter-spacing: 0;
+  display: block;
+  width: 240px;
+  padding: 10px 10px 11px 10px;
+}
+div#cssmenu ul li ul li:hover > a,
+div#cssmenu ul li ul li.active > a {
+  color: #00366C;
+}
+div#cssmenu ul li ul li:hover:after,
+div#cssmenu ul li ul li.active:after {
+  background: #00366C;
+}
+div#cssmenu ul li ul li:hover > ul {
+  left: 100%;
+  top: 0;
+}
+div#cssmenu ul li ul li:hover > ul > li {
+  max-height: 72px;
+  position: relative;
+}
+div#cssmenu > ul > li {
+  float: left;
+}
+div#cssmenu.align-center > ul > li {
+  float: none;
+  display: inline-block;
+}
+div#cssmenu.align-center > ul {
+  text-align: center;
+}
+div#cssmenu.align-center ul ul {
+  text-align: left;
+}
+div#cssmenu.align-right > ul {
+  float: right;
+}
+div#cssmenu.align-right > ul > li:hover > ul {
+  left: auto;
+  right: 0;
+}
+div#cssmenu.align-right ul ul li:hover > ul {
+  right: 100%;
+  left: auto;
+}
+div#cssmenu.align-right ul ul li a {
+  text-align: right;
+}
+div#cssmenu > ul > li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  z-index: 0;
+  background: #ffffff;
+  -webkit-transition: height .2s;
+  -moz-transition: height .2s;
+  -ms-transition: height .2s;
+  -o-transition: height .2s;
+  transition: height .2s;
+}
+div#cssmenu > ul > li.has-sub > a {
+  padding-right: 30px;
+}
+div#cssmenu > ul > li.has-sub > a:after {
+  display: block;
+  content: "";
+  background: #FFF;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  border-radius: 13px;
+  right: 14px;
+  top: 12px;
+}
+div#cssmenu > ul > li.has-sub > a:before {
+  display: block;
+  content: "";
+  border: 4px solid transparent;
+  border-top-color: #00366C;
+  z-index: 2;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  right: 15px;
+  top: 16px;
+}
+div#cssmenu > ul > li > a {
+  color: #ffffff;
+  padding: 13px 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
+  z-index: 2;
+  position: relative;
+}
+div#cssmenu > ul > li:hover:after,
+div#cssmenu > ul > li.active:after {
+  height: 100%;
+}
+div#cssmenu > ul > li:hover > a,
+div#cssmenu > ul > li.active > a {
+  color: #333;
+}
+div#cssmenu > ul > li:hover > a:after,
+div#cssmenu > ul > li.active > a:after {
+  background: #333;
+}
+div#cssmenu > ul > li:hover > a:before,
+div#cssmenu > ul > li.active > a:before {
+  border-top-color: #ffffff;
+}
+div#cssmenu > ul > li:hover > ul {
+  left: 0;
+}
+div#cssmenu > ul > li:hover > ul > li {
+  max-height: 72px;
+  position: relative;
+}
+div#cssmenu #menu-button {
+  display: none;
+}
+div#cssmenu > ul > li > a {
+  display: block;
+}
+div#cssmenu > ul > li {
+  width: auto;
+}
+div#cssmenu > ul > li > ul {
+  width: 70px;
+  display: block;
+}
+#cssmenu > ul > li > ul > li {
+  width: 240px;
+  display: block;
+}
+
+h1#titulo_paginas{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#00366C;
+	margin-top:30px;
+	padding-bottom:10px;
+	border-bottom:solid 1px #CCC;
+}
+
+div#pagina_index_mobile{
+	display:none;
+}
+
+/* Pagina Quem Somos ============================= */
+div#pagina_sobre{
+	height:550px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:5px;
+}
+
+div#pagina_sobre h2{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#666;
+	font-size:16px;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+
+div#pagina_sobre p{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#777;
+	font-size:14px;
+	margin-top:10px;
+}
+
+div#pagina_sobre ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#777;
+	font-size:14px;
+	margin-top:10px;
+	list-style:inside;
+}
+
+/* Efeito páginas clientes e parceiros */
+table#conteudo_parceiros_clientes tr td{
+	display:inline-block;
+	width:365px;
+	height:280px;
+	transition:all 0.5s;
+}
+
+table#conteudo_parceiros_clientes tr td:hover{
+	filter: alpha(opacity:0.5);
+	KHTMLOpacity: 0.5;
+	MozOpacity: 0.5;
+	-khtml-opacity:.50;
+	-ms-filter:"alpha(opacity=50)";
+	-moz-opacity:.50;
+	filter:alpha(opacity=50);
+	opacity:.50;
+	transition:all 0.5s;
+}
+
+div#conteudo_parceiros_clientes_tablet{
+	display:none;
+}
+
+/* Pagina clientes ============================= */
+div#pagina_clientes{
+	height:400px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:5px;
+
+}
+
+/* Pagina Parceiros ============================= */
+div#pagina_parceiros{
+	height:900px;
+	width:1110px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+/* Pagina contato ============================= */
+div#pagina_contato{
+	height:550px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:5px;
+}
+
+div#formulario_contato{
+	margin-top:30px;
+	float:left;
+}
+
+div#formulario_contato form p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#00366C;
+}
+
+div#formulario_contato form input#botao_enviar_contato{
+	width:100px;
+	height:25px;
+	margin-right:20px;
+	outline:none;
+	cursor:pointer;
+	color:#fff;
+	text-align:center;
+	border-radius:4px;
+	border:1px solid #004B97;
+	box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+	background-image: linear-gradient(to bottom, #0053A6, #00366C 130%);
+}
+
+div#formulario_contato form input#botao_limpar_contato{
+	width:150px;
+	height:25px;
+	color:#fff;
+	text-align:center;
+	border-radius:4px;
+	border:1px solid #004B97;
+	box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+	background-image: linear-gradient(to bottom, #0053A6, #00366C 130%);
+	cursor:pointer;
+	outline:none;
+}
+
+div#formulario_contato form input#botao_limpar_contato:active{
+	border-radius:4px;
+	border:1px solid #004B97;
+	box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+	background-image: linear-gradient(to bottom, #003D79, #00274F 130%);
+}
+
+div#formulario_contato form input#botao_enviar_contato:active{
+	border-radius:4px;
+	border:1px solid #004B97;
+	box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+	background-image: linear-gradient(to bottom, #003D79, #00274F 130%);
+}
+
+div#formulario_contato form textarea{
+	border:solid 1px #CCC;
+	margin-top:5px;
+	color:#666;
+	outline:none;
+	padding:5px 5px;
+	width: 430px;
+    height: 150px;
+}
+
+div#formulario_contato form input{
+	border:solid 1px #CCCCCC;
+	margin-top:5px;
+	width:430px;
+	color:#00366C;
+	outline:none;
+	padding:5px 5px;
+}
+
+div#mapa_contato{
+	width:auto;
+	height:auto;
+	float:right;
+	margin-top:30px;
+}
+
+div#mapa_contato h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#00366C;
+	margin-bottom:10px;
+}
+
+div#enderecos{
+	float:right;
+	width:600px;;
+	height:auto;
+	margin-top:30px;
+}
+
+div#enderecos ul{
+	display:inline-block;
+	margin-right:30px;
+}
+
+div#enderecos ul li{
+	list-style:none;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	margin-bottom:10px;
+	color:#777;
+}
+
+div#contatos_contato{
+	float:right;
+	margin-top:-112px;
+}
+
+div#contatos_contato div{
+	margin-bottom:5px;
+}
+
+div#contatos_contato span{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-left:7px;
+}
+
+/* Pagina Orçamento ============================= */
+div#pagina_orcamento{
+	height:550px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:5px;
+}
+
+div#calculadora{
+	float:right;
+	margin-top:20px;
+	margin-right:23px;
+}
+
+div#formulario_orcamento{
+	margin-top:30px;
+}
+
+div#formulario_orcamento form p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#666;
+}
+
+div#formulario_orcamento form textarea{
+	border:solid 1px #CCC;
+	margin-top:5px;
+	color:#666;
+	width:500px;
+}
+
+div#formulario_orcamento form input{
+	border:solid 1px #CCCCCC;
+	margin-top:5px;
+	width:450px;
+	color:#00366C;
+	height:20px;
+}
+
+div#formulario_orcamento form input#botao_enviar_contato{
+	width:100px;
+	height:25px;
+	margin-right:15px;
+	cursor:pointer;
+	color:#fff;
+	text-align:center;
+	border-radius:4px;
+	border:1px solid #004B97;
+	box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+	background-image: linear-gradient(to bottom, #0053A6, #00366C 130%);
+}
+
+div#formulario_orcamento form input#botao_limpar_contato{
+	width:150px;
+	height:25px;
+	cursor:pointer;
+	color:#fff;
+	text-align:center;
+	border-radius:4px;
+	border:1px solid #004B97;
+	box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+	background-image: linear-gradient(to bottom, #0053A6, #00366C 130%);
+}
+
+div#formulario_orcamento form input#botao_limpar_contato:active{
+	border-radius:4px;
+	border:1px solid #004B97;
+	box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+	background-image: linear-gradient(to bottom, #003D79, #00274F 130%);
+}
+
+div#formulario_orcamento form input#botao_enviar_contato:active{
+	border-radius:4px;
+	border:1px solid #004B97;
+	box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+	background-image: linear-gradient(to bottom, #003D79, #00274F 130%);
+}
+
+/* Pagina telecom ============================= */
+div#pagina_telecom{
+	height:800px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_telecom h1{
+	font-family:Verdana, Geneva, sans-serif;
+	color: #060;
+	font-weight:600;
+	font-size:24px;
+	margin-top:30px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #999;
+}
+
+ul#conteudo_telecom{
+	margin-top:50px
+}
+
+ul#conteudo_telecom li.align_right_conteudo_telecom{
+	float:right;
+	margin-right:0px;
+}
+
+ul#conteudo_telecom li{
+	display:inline-table;
+	width:200px;
+	height:275px;
+	margin-right:21px;
+	margin-bottom:50px;
+}
+
+ul#conteudo_telecom li h2{
+	margin-bottom:10px;
+	text-align:center;
+	background-color:#060;
+	height:20px;
+	width:auto;
+}
+
+ul#conteudo_telecom li h2 a{
+	text-decoration:none;
+	color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	text-shadow: 1px 0px 1px #000000;
+}
+
+ul#conteudo_telecom li h2 a:hover{
+	text-decoration:underline;
+}
+
+
+ul#conteudo_telecom li p{
+	text-align:center;
+	margin-top:10px;
+}
+
+ul#conteudo_telecom li p a{
+	text-decoration:none;
+	color:#666;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:14px;
+	margin-top:0px;
+}
+
+ul#conteudo_telecom li p a:hover{
+	text-decoration:underline;
+	color:#000;
+}
+
+div.leia_mais_conteudo_telecom{
+	float:right;
+	margin-top:22px;
+	height:20px;
+	width:87px;
+	padding-top:3px;
+	color:#CCC;
+	font-size:20px;
+	text-align:center;
+	border-radius:4px;
+	border:1px solid #999;
+	background-image: linear-gradient(to bottom, #999, #333 130%);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+div.leia_mais_conteudo_telecom a{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	text-shadow: 1px 1px 1px #000000;
+	text-decoration:none;
+}
+
+div.leia_mais_conteudo_telecom:hover{
+	border:1px solid #666;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+	background-image: linear-gradient(to bottom, #666, #333 130%);
+}
+
+/* Pagina Sistemas CFTV ============================= */
+div#pagina_sistemascftv{
+	height:800px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_sistemascftv h1{
+	font-family:Verdana, Geneva, sans-serif;
+	color: #C46200;
+	font-weight:600;
+	font-size:24px;
+	margin-top:30px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #999;
+}
+	
+ul#conteudo_sistemascftv{
+	margin-top:40px
+}
+
+ul#conteudo_sistemascftv li.align_right_conteudo_sistemascftv{
+	float:right;
+	margin-right:0px;
+}
+
+ul#conteudo_sistemascftv li{
+	display:inline-table;
+	width:200px;
+	height:275px;
+	margin-right:21px;
+	margin-bottom:50px;
+}
+
+ul#conteudo_sistemascftv li h2{
+	margin-bottom:10px;
+	text-align:center;
+	background-color:#C46200;
+	height:20px;
+	width:auto;
+}
+
+ul#conteudo_sistemascftv li h2 a{
+	text-decoration:none;
+	color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	text-shadow: 1px 0px 1px #000000;
+}
+
+ul#conteudo_sistemascftv li h2 a:hover{
+	text-decoration:underline;
+}
+
+
+ul#conteudo_sistemascftv li p{
+	text-align:center;
+	margin-top:10px;
+}
+
+ul#conteudo_sistemascftv li p a{
+	text-decoration:none;
+	color:#666;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:14px;
+	margin-top:0px;
+}
+
+ul#conteudo_sistemascftv li p a:hover{
+	text-decoration:underline;
+	color:#000;
+}
+
+div.leia_mais_conteudo_sistemascftv{
+	float:right;
+	margin-top:22px;
+	height:20px;
+	width:87px;
+	padding-top:3px;
+	color:#CCC;
+	font-size:20px;
+	text-align:center;
+	border-radius:4px;
+	border:1px solid #999;
+	background-image: linear-gradient(to bottom, #999, #333 130%);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+div.leia_mais_conteudo_sistemascftv a{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	text-shadow: 1px 1px 1px #000000;
+	text-decoration:none;
+}
+
+div.leia_mais_conteudo_sistemascftv:hover{
+	border:1px solid #666;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+	background-image: linear-gradient(to bottom, #666, #333 130%);
+}
+
+/* Pagina Soluções TI ============================= */
+div#pagina_solucoes_ti{
+	height:800px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_solucoes_ti h1{
+	font-family:Verdana, Geneva, sans-serif;
+	color: #00366C;
+	font-weight:600;
+	font-size:24px;
+	margin-top:30px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #999;
+}
+	
+ul#conteudo_solucoes_ti{
+	margin-top:40px
+}
+
+ul#conteudo_solucoes_ti li.align_right_conteudo_solucoes_ti{
+	float:right;
+	margin-right:0px;
+}
+
+ul#conteudo_solucoes_ti li{
+	display:inline-table;
+	width:200px;
+	height:275px;
+	margin-right:21px;
+	margin-bottom:50px;
+}
+
+ul#conteudo_solucoes_ti li h2{
+	margin-bottom:10px;
+	text-align:center;
+	background-color:#00366C;
+	height:20px;
+	width:auto;
+}
+
+ul#conteudo_solucoes_ti li h2 a{
+	text-decoration:none;
+	color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	text-shadow: 1px 0px 1px #000000;
+}
+
+ul#conteudo_solucoes_ti li h2 a:hover{
+	text-decoration:underline;
+}
+
+
+ul#conteudo_solucoes_ti li p{
+	text-align:center;
+	margin-top:10px;
+}
+
+ul#conteudo_solucoes_ti li p a{
+	text-decoration:none;
+	color:#666;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:14px;
+	margin-top:0px;
+}
+
+ul#conteudo_solucoes_ti li p a:hover{
+	text-decoration:underline;
+	color:#000;
+}
+
+div.leia_mais_conteudo_solucoes_ti{
+	float:right;
+	margin-top:22px;
+	height:20px;
+	width:87px;
+	padding-top:3px;
+	color:#CCC;
+	font-size:20px;
+	text-align:center;
+	border-radius:4px;
+	border:1px solid #999;
+	background-image: linear-gradient(to bottom, #999, #333 130%);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+div.leia_mais_conteudo_solucoes_ti a{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	text-shadow: 1px 1px 1px #000000;
+	text-decoration:none;
+}
+
+div.leia_mais_conteudo_solucoes_ti:hover{
+	border:1px solid #666;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+	background-image: linear-gradient(to bottom, #666, #333 130%);
+}
+
+/* Pagina Sisitema ============================= */
+div#pagina_sistemas{
+	height:500px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_sistemas h1{
+	font-family:Verdana, Geneva, sans-serif;
+	color: #E1B500;
+	font-weight:600;
+	font-size:24px;
+	margin-top:30px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #999;
+}
+	
+ul#conteudo_sistemas{
+	margin-top:40px
+}
+
+ul#conteudo_sistemas li{
+	display:inline-table;
+	width:240px;
+	height:275px;
+	margin-right:21px;
+	margin-bottom:50px;
+}
+
+ul#conteudo_sistemas li h2{
+	margin-bottom:10px;
+	text-align:center;
+	background-color:#E1B500;
+	height:20px;
+	width:auto;
+}
+
+ul#conteudo_sistemas li h2 a{
+	text-decoration:none;
+	color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	text-shadow: 1px 0px 1px #000000;
+}
+
+ul#conteudo_sistemas li h2 a:hover{
+	text-decoration:underline;
+}
+
+
+ul#conteudo_sistemas li p{
+	text-align:center;
+	margin-top:10px;
+}
+
+ul#conteudo_sistemas li p a{
+	text-decoration:none;
+	color:#666;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:14px;
+	margin-top:0px;
+}
+
+ul#conteudo_sistemas li p a:hover{
+	text-decoration:underline;
+	color:#000;
+}
+
+div.leia_mais_conteudo_sistemas{
+	float:right;
+	margin-top:22px;
+	height:20px;
+	width:87px;
+	padding-top:3px;
+	color:#CCC;
+	font-size:20px;
+	text-align:center;
+	border-radius:4px;
+	border:1px solid #999;
+	background-image: linear-gradient(to bottom, #999, #333 130%);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+div.leia_mais_conteudo_sistemas a{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	text-shadow: 1px 1px 1px #000000;
+	text-decoration:none;
+}
+
+div.leia_mais_conteudo_sistemas:hover{
+	border:1px solid #666;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+	background-image: linear-gradient(to bottom, #666, #333 130%);
+}
+
+/* Pagina Aplicativos ============================= */
+div#pagina_aplicativos{
+	height:500px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_aplicativos h1{
+	font-family:Verdana, Geneva, sans-serif;
+	color: #900;
+	font-weight:600;
+	font-size:24px;
+	margin-top:30px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #999;
+}
+	
+ul#conteudo_aplicativos{
+	margin-top:40px
+}
+
+ul#conteudo_aplicativos li{
+	display:inline-table;
+	width:240px;
+	height:275px;
+	margin-right:21px;
+	margin-bottom:50px;
+}
+
+ul#conteudo_aplicativos li h2{
+	margin-bottom:10px;
+	text-align:center;
+	background-color:#900;
+	height:20px;
+	width:auto;
+}
+
+ul#conteudo_aplicativos li h2 a{
+	text-decoration:none;
+	color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	text-shadow: 1px 0px 1px #000000;
+}
+
+ul#conteudo_aplicativos li h2 a:hover{
+	text-decoration:underline;
+}
+
+
+ul#conteudo_aplicativos li p{
+	text-align:center;
+	margin-top:10px;
+}
+
+ul#conteudo_aplicativos li p a{
+	text-decoration:none;
+	color:#666;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:14px;
+	margin-top:0px;
+}
+
+ul#conteudo_aplicativos li p a:hover{
+	text-decoration:underline;
+	color:#000;
+}
+
+div.leia_mais_conteudo_aplicativos{
+	float:right;
+	margin-top:22px;
+	height:20px;
+	width:87px;
+	padding-top:3px;
+	color:#CCC;
+	font-size:20px;
+	text-align:center;
+	border-radius:4px;
+	border:1px solid #999;
+	background-image: linear-gradient(to bottom, #999, #333 130%);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+div.leia_mais_conteudo_aplicativos a{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	text-shadow: 1px 1px 1px #000000;
+	text-decoration:none;
+}
+
+div.leia_mais_conteudo_aplicativos:hover{
+	border:1px solid #666;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+	background-image: linear-gradient(to bottom, #666, #333 130%);
+}
+
+/* Pagina Site Survey ============================= */
+div#pagina_site_survey{
+	height:1100px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_site_survey h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#060;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+}
+
+div#pagina_site_survey p{
+	font-size:16px;
+	font-weight:normal;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#666;
+	margin-top:20px;
+}
+
+div#pagina_site_survey ul li{
+	margin-bottom:10px;
+	list-style:none;
+}
+
+div#pagina_site_survey ul li.margin_bottom{
+	margin-bottom:50px;
+}
+
+div#pagina_site_survey ul li span{
+	font-size:16px;
+	font-weight:normal;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#666;
+}
+
+div#pagina_site_survey h2{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#444;
+	font-size:14px;
+	font-weight:600;
+	margin-top:30px;
+}
+
+div#pagina_site_survey h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#060;
+	margin-top:30px;
+	font-weight:600;
+	margin-bottom:10px;
+}
+
+div#pagina_site_survey h4{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	margin-bottom:15px;
+	color:#060;
+	margin-top:30px;
+}
+
+div#pagina_site_survey ul#h4_conteudo li{
+	list-style:inside;
+	color:#777;
+}
+
+/* Pagina Estudo propagação de sinal ============================= */
+div#pagina_estudo_propag_sinal{
+	height:auto;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_estudo_propag_sinal h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#060;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+}
+
+div#pagina_estudo_propag_sinal h2{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#555;
+	font-size:16px;
+	margin-top:30px;
+	text-align:center;
+}
+
+div#pagina_estudo_propag_sinal p{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#777;
+	font-size:16px;
+	margin-top:20px;
+}
+
+div#pagina_estudo_propag_sinal h3{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#666;
+	font-size:16px;
+	margin-top:30px;
+	text-align:center;
+}
+
+div#img_pagina_estudo_propag_sinal{
+	width:600px;
+	height:239px;
+	margin:auto;
+}
+
+div#img_pagina_estudo_propag_sinal_tablet{
+	display:none;
+}
+
+/* Pagina Implantação de sistema de radio e torre ============================= */
+div#pagina_implan_sis_radio_torre{
+	height:auto;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_implan_sis_radio_torre h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#060;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#paragrafo{
+	margin-top:90px;
+}
+
+div#pagina_implan_sis_radio_torre p{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#777;
+	font-size:16px;
+}
+
+div#pagina_implan_sis_radio_torre p#direita{
+	width:800px;
+	margin-left:160px;
+	margin-top:-150px;
+}
+
+div#pagina_implan_sis_radio_torre div#conteudo_img{
+	margin-top:20px;
+	width:150px;
+	height:210px;
+}
+
+div#pagina_implan_sis_radio_torre h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#060;
+	margin-top:25px;
+	margin-bottom:10px
+}
+
+div#pagina_implan_sis_radio_torre  h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	margin-top:0px;
+	margin-bottom:5px;
+	color:#060;
+}
+
+div#pagina_implan_sis_radio_torre ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	list-style:inside;
+}
+
+/* Pagina Interligação entre repetidoras ============================= */
+div#pagina_interli_entre_repeti{
+	height:600px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_interli_entre_repeti h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#060;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_interli_entre_repeti h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:30px;
+	text-align:center;
+}
+
+div#pagina_interli_entre_repeti p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	margin-bottom:10px;
+	color:#777;
+}
+
+/* Pagina Interligação de redes via rádio ============================= */
+div#pagina_interli_rede_viaradio{
+	height:700px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_interli_rede_viaradio h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#060;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#img_interli_rede_viaradio{
+	display:none;
+}
+
+div#pagina_interli_rede_viaradio h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	font-weight:400;
+	color:#666;
+	margin-bottom:20px;
+	text-align:center;
+	margin-top:40px;
+}
+
+div#pagina_interli_rede_viaradio p{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#777;
+	font-size:14px;
+	margin-bottom:10px;
+}
+
+div#pagina_interli_rede_viaradio h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#666;
+	margin-top:30px;
+}
+
+div#pagina_interli_rede_viaradio ul{
+	margin-top:10px;
+}
+
+div#pagina_interli_rede_viaradio ul li{
+	list-style:inside;
+	color:#777;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	margin-bottom:10px;
+}
+
+/* Pagina repetidoras de celular ============================= */
+div#pagina_reptidora_celular{
+	height:730px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_reptidora_celular h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#060;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_reptidora_celular p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:20px;
+}
+
+div#pagina_reptidora_celular h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:10px;
+}
+
+div#pagina_reptidora_celular ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	list-style:inside;
+	margin-bottom:10px;
+}
+
+div#pagina_reptidora_celular h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#060;
+	margin-bottom:10px;
+	margin-top:30px;
+	border-top:solid 1px #D4D4D4;
+	padding-top:30px;
+}
+
+/* Pagina Mapeamento de sinais GPRS e 3G ============================= */
+div#pagina_mapeam_sinais_gprs_3g{
+	height:630px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_mapeam_sinais_gprs_3g h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#060;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_mapeam_sinais_gprs_3g h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:10px;
+}
+
+div#pagina_mapeam_sinais_gprs_3g p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_mapeam_sinais_gprs_3g ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:5px;
+	list-style:inside;
+}
+
+div#img_pagina_mapeam_gprs_3g{
+	display:none;
+}
+
+/* Pagina treinamento operacional ============================= */
+div#pagina_treinam_opera{
+	height:550px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_treinam_opera h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#060;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_treinam_opera p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#666;
+	margin-bottom:20px;
+}
+
+div#pagina_treinam_opera ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+	list-style:inside;
+}
+
+div#pagina_treinam_opera h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#060;
+	margin-top:40px;
+	margin-bottom:10px;
+}
+
+/* Pagina Bastão de segurança ============================= */
+div#pagina_bastao_seguranca{
+	height:1000px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_bastao_seguranca h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#060;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_bastao_seguranca p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-top:10px;
+}
+
+div#pagina_bastao_seguranca h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-top:20px;
+	font-weight:normal;
+	margin-bottom:10px;
+	border-top:solid 1px #D8D8D8;
+	text-align:center;
+	border-bottom:solid 1px #D8D8D8;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+div#pagina_bastao_seguranca h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-top:30px;
+}
+
+div#pagina_bastao_seguranca h4{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#666;
+	margin-top:20px;
+	font-weight:normal;
+	margin-bottom:10px;
+}
+
+div#pagina_bastao_seguranca ul{
+	margin-bottom:30px;
+}
+
+div#pagina_bastao_seguranca ul li{
+	list-style:inside;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_bastao_seguranca p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_bastao_seguranca h5{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#666;
+	margin-top:30px;
+}
+
+div#img_pagina_bastao_seguranca{
+	display:none;
+}
+
+/* Pagina Legislação de frequência ============================= */
+div#pagina_legis_frequencia{
+	height:auto;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_legis_frequencia h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#060;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_legis_frequencia h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:20px;
+}
+
+div#pagina_legis_frequencia p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:20px;
+}
+
+/* Pagina Projeto de implantação ============================= */
+div#pagina_proje_implant{
+	height:400px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_proje_implant h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#C46200;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_proje_implant p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_proje_implant h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:20px;
+	margin-top:30px;
+}
+
+div#pagina_proje_implant h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:20px;
+	margin-top:30px;
+}
+
+/* Pagina Análise de risco ============================= */
+div#pagina_analise_risco{
+	height:600px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_analise_risco h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#C46200;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_analise_risco p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_analise_risco h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#C46200;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+/* Pagina Armazenamento de imagem ============================= */
+div#pagina_armazena_imagem{
+	height:500px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_armazena_imagem h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#C46200;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_armazena_imagem p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_armazena_imagem h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	margin-bottom:10px;
+	margin-top:20px;
+	color:#666;
+}
+
+div#pagina_armazena_imagem h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	margin-bottom:10px;
+	margin-top:40px;
+	color:#C46200;
+}
+
+div#pagina_armazena_imagem ul li{
+	list-style:inside;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#777;
+	font-size:14px;
+	margin-bottom:10px;
+}
+
+div#img_pagina_armazen_img{
+	display:none;
+}
+
+/* Pagina Sistema de alarme ============================= */
+div#pagina_sis_alarme{
+	height:800px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_sis_alarme h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#C46200;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_sis_alarme p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_sis_alarme h2{
+	font-family:Verdana, Geneva, sans-serif;
+	text-align:center;
+	font-size:16px;
+	color:#666;
+	margin-bottom:10px;
+	margin-top:20px;
+}
+
+div#pagina_sis_alarme ul{
+	margin-bottom:30px;
+}
+
+div#pagina_sis_alarme ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	list-style:inside;
+	margin-bottom:10px;
+}
+
+div#pagina_sis_alarme h3{
+	font-family:Verdana, Geneva, sans-serif;
+	text-align:center;
+	font-size:16px;
+	color:#C46200;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+
+div#img_pagina_sis_alarme{
+	display:none;
+}
+
+/* Pagina Automação residencial ============================= */
+div#pagina_automacao_residenci{
+	height:570px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_automacao_residenci h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#C46200;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_automacao_residenci h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:20px;
+}
+
+div#pagina_automacao_residenci p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_automacao_residenci h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+div#img_pagina_automacao_residen{
+	display:none;
+}
+
+div#img2_pagina_automacao_residen{
+	display:none;
+}
+
+/* Pagina Video wall ============================= */
+div#pagina_video_wall{
+	height:1050px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_video_wall h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#C46200;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_video_wall h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	text-align:center;
+	color:#333;
+	margin-bottom:30px;
+}
+
+div#pagina_video_wall p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_video_wall h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:20px;
+	margin-top:30px;
+}
+
+div#pagina_video_wall h4{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#C46200;
+	margin-bottom:10px;
+	margin-top:30px;
+}
+
+div#pagina_video_wall ul li{
+	list-style:inside;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#777;
+	font-size:14px;
+	margin-bottom:10px;
+}
+
+/* Pagina Detectação alarmde de incêndio ============================= */
+div#pagina_detectacao_alarm_incend{
+	height:1840px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_detectacao_alarm_incend h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#C46200;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_detectacao_alarm_incend p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_detectacao_alarm_incend ul{
+	margin-bottom:30px;
+	margin-top:30px;
+}
+
+div#pagina_detectacao_alarm_incend ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+	list-style:inside;
+}
+
+div#pagina_detectacao_alarm_incend h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+
+div#img_pagina_detectacao_alarm_incend_um{
+	display:none;
+}
+
+div#img_pagina_detectacao_alarm_incend_dois{
+	display:none;
+}
+
+/* Pagina Controle de acesso ============================= */
+div#pagina_controle_acesso{
+	height:1110px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_controle_acesso h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#C46200;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_controle_acesso h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+div#pagina_controle_acesso p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_controle_acesso h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:20px;
+}
+
+div#pagina_controle_acesso h4{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-top:30px;
+	margin-bottom:10px;
+}
+
+div#pagina_controle_acesso ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+	list-style:inside;
+}
+
+div#img_pagina_controle_acesso{
+	display:none;
+}
+
+/* Pagina Rastreabilidade RFID ============================= */
+div#pagina_rastre_rfid{
+	height:550px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_rastre_rfid h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#C46200;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_rastre_rfid h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:30px;
+}
+
+div#pagina_rastre_rfid p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_rastre_rfid ul{
+	margin-top:20px;
+	margin-bottom:30px;
+}
+
+div#pagina_rastre_rfid ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+	list-style:inside;
+}
+
+div#pagina_rastre_rfid h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:30px;
+}
+
+div#img_pagina_rfid{
+	display:none;
+}
+
+/* Pagina Monitoração 24 horas ============================= */
+div#pagina_monitoracao{
+	height:1250px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_monitoracao h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#C46200;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_monitoracao p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_monitoracao ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	list-style:inside;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_monitoracao h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#C46200;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+
+div#img_pagina_monitoracao{
+	display:none;
+}
+
+/* Pagina Infraestrutura ============================= */
+div#pagina_infraestrutura{
+	height:auto;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_infraestrutura h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#00366C;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_infraestrutura p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#img_pagina_infra_ti{
+	display:none;
+}
+
+/* Pagina Outsourcing ============================= */
+div#pagina_outsourcing{
+	height:1150px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_outsourcing h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#00366C;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_outsourcing p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_outsourcing h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:20px;
+	margin-top:30px;
+}
+
+div#pagina_outsourcing ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+	list-style:inside;
+}
+
+div#img_pagina_outsourcing{
+	display:none;
+}
+
+/* Pagina Redes ============================= */
+div#pagina_redes{
+	height:940px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_redes h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#00366C;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_redes p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_redes h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+
+div#pagina_redes ul{
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+div#pagina_redes ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+	list-style:inside;
+}
+
+div#img_pagina_redes{
+	display:none;
+}
+
+/* Pagina Assistência técnica ============================= */
+div#pagina_assist_tecnica{
+	height:600px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_assist_tecnica h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#00366C;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_assist_tecnica h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:30px;
+	margin-top:20px;
+}
+
+div#pagina_assist_tecnica ul li{
+	list-style:inside;
+	margin-bottom:10px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+}
+	
+div#pagina_assist_tecnica p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:20px;
+}
+
+div#pagina_assist_tecnica p a{
+	text-decoration:none;
+	color:#00366C;
+}
+
+div#pagina_assist_tecnica p a:hover{
+	text-decoration:underline;
+	font-weight:600;
+}
+
+/* Pagina Desenvolvimento de websites ============================= */
+div#pagina_desenv_websites{
+	height:520px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_desenv_websites h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#00366C;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_desenv_websites p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_desenv_websites p a{
+	text-decoration:none;
+	color:#00366C;
+}
+
+div#pagina_desenv_websites p a:hover{
+	text-decoration:underline;
+	font-weight:600;
+}
+
+div#img_pagina_desen_website{
+	display:none;
+}
+
+/* Pagina Domínio ============================= */
+div#pagina_dominio{
+	height:700px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_dominio h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#00366C;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_dominio p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+}
+
+div#pagina_dominio h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:20px;
+	margin-top:30px;
+}
+
+div#pagina_dominio h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#00366C;
+	margin-bottom:10px;
+	margin-top:20px;
+}
+
+/* Pagina CHBAgro ============================= */
+div#pagina_chbagro{
+	height:600px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_chbagro h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#E1B500;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_chbagro p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:20px;
+}
+
+button.gerais{
+	display:none;
+}
+
+/* Pagina millenium ============================= */
+div#pagina_millenium{
+	height:1030px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_millenium h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#E1B500;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_millenium p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_millenium h2{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#666;
+	font-size:16px;
+	margin-bottom:20px;
+	margin-top:30px;
+}
+
+div#pagina_millenium ul{
+	margin-top:30px;
+}
+
+div#pagina_millenium ul li{
+	list-style:none;
+	margin-bottom:10px;
+	height:120px;
+}
+
+div#pagina_millenium ul li p{
+	margin-left:130px;
+}
+
+div#pagina_millenium ul li h3{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#E1B500;
+	font-size:16px;
+	margin-bottom:20px;
+	margin-left:130px;
+}
+
+div#conteudo_bottom_millenium{
+	width:100%;
+	height:auto;
+	margin-top:20px;
+	border-top:solid 1px #D2D2D2;
+	border-bottom:solid 1px #D2D2D2;
+}
+
+div#conteudo_bottom_millenium p{
+	padding-bottom:20px;
+	padding-top:20px;
+	width:1000px;
+	margin:auto;
+	text-align:center;
+	font-weight:600; 
+}
+
+/* Pagina OpMon ============================= */
+div#pagina_opmon{
+	height:1600px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_opmon h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#900;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_opmon h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:20px;
+}
+
+div#pagina_opmon p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+}
+
+div#pagina_opmon h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#666;
+	margin-bottom:20px;
+}
+
+div#pagina_opmon ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+	list-style:inside;
+}
+
+div#img_pagina_opmon{
+	display:none;
+}
+
+div#img_logoopmon_pagina_opmon{
+	display:none;
+}
+
+/* Pagina Adoti ============================= */
+div#pagina_adoti{
+	height:1300px;
+	width:1100px;
+	margin:auto;
+	background-color:#FFF;
+	margin-top:10px;
+}
+
+div#pagina_adoti h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#900;
+	margin-top:40px;
+	font-weight:600;
+	padding-bottom:10px;
+	border-bottom: solid 1px #999;
+	margin-bottom:30px;
+}
+
+div#pagina_adoti p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:20px;
+}
+
+div#pagina_adoti ul{
+	margin-bottom:30px;
+	margin-top:10px;
+}
+
+div#pagina_adoti ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#777;
+	margin-bottom:10px;
+	list-style:inside;
+}
+
+div#img_pagina_adoti{
+	display:none;
+}
+
+/* Botão entre em contao sobre este serviço */
+div#entre_em_contato_desse_servico{
+	height:auto;
+	width:400px;
+	padding: 10px 0;
+	margin-top:40px;
+	float:right;
+	color:#fff;
+	text-align:center;
+	border-radius:4px;
+	box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+	background-image: linear-gradient(to bottom, #0053A6, #00366C 130%);
+}
+
+div#entre_em_contato_desse_servico a{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	text-decoration:none;
+	color:#FFF;
+	text-shadow:1px 1px 1px #000000;
+}
+
+div#entre_em_contato_desse_servico:hover{
+	border-radius:4px;
+	box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+	background-image: linear-gradient(to bottom, #0060BF, #0052A4 130%);
+}
+
+div#entre_em_contato_desse_servico:active{
+	border-radius:4px;
+	box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+	background-image: linear-gradient(to bottom, #003D79, #00274F 130%);
+}
+
+div#rodape_mobile{
+	display:none;
+}
+
+/* Rodapé ============*/
+div#rodape{
+	height:420px;
+	width:100%;
+	position:relative;
+	float:right;
+	margin-top:20px;
+	border-top: 10px solid #666;
+	background-color:#00366C;
+	background-image:linear-gradient(to bottom, transparent 1px, rgba(0,0,0,.1) 1px);
+	background-size: auto 2px;
+}
+
+div#conteudo_rodape{
+	width:1100px;
+	height:100%;
+	background-color:transparent;
+	position:relative;
+	margin:auto;
+}
+
+div#conteudo_rodape h1{
+	margin-bottom:20px;
+}
+
+div#conteudo_rodape h1 a{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#FFF;
+	text-shadow:1px 1px 1px #000000;
+}
+
+div.lista_conteudos_rodape{
+	display:inline-table;
+	margin-right:30px;
+	margin-top:20px;
+}
+
+div#conteudo_rodape ul li{
+	margin-bottom:10px;
+	list-style:none;
+	color:#FFF;
+	width:auto;
+}
+
+div#conteudo_rodape ul li a{
+	text-decoration:none;
+}
+
+div#conteudo_rodape ul li span{
+	text-decoration:none;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	text-shadow:1px 1px 1px #000000;
+	color:#FFF;
+}
+
+div#conteudo_rodape ul li a span:hover{
+	text-decoration:underline;
+}
+
+div#logo_rodape{
+	position:absolute; bottom:60px; right:80px;
+}
+
+div#menu_bottom_rodape{
+	position:absolute; bottom:20px;
+	width:1110px;
+}
+
+div#menu_bottom_rodape ul li{
+	display:inline;
+	margin-right:30px;
+}
+
+div#menu_bottom_rodape ul li a span{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	text-shadow:1px 1px 1px #000000;
+	color:#FFF;
+}
+
+div#enderecos_tablet{
+	display:none;
+}
+
+div.desativar_copyright{
+	display:none;
+}
